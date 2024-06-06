@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakout</title>
+    <link rel="stylesheet" href="css/breakout.css">
+    <script src="https://kit.fontawesome.com/9b0de1b897.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Breakout</h1>
+    <button id="rules-btn" class="btn rules-btn">Show Rules</button>
+    <div id="rules" class="rules">
+        <h2>How To Play:</h2>
+        <p>Use your right and left keys to move the paddle to bounce the ball up and break the blocks.</p>
+        <p>If you miss the ball, your score and the blocks will reset.</p>
+        <button id="close-btn" class="btn">Close</button>
+    </div>
+    <button id= "start-btn" class="start-btn">Start</button>
+
+
+    <div id="lose" class="lose-container">
+        <div class="lose">
+            <div class="lose-header">
+                <h2>You Lost!</h2>
+            </div>
+            <div class="lose-content">
+                <button id="restart" class="restart">Restart</button>
+            </div>
+        </div>
+    </div>
+
+
+    <button id="music" class="music">
+        <audio src="lofi.mp3"></audio>
+        <i class="fa-solid fa-music"></i>
+    </button>
+
+
+    <canvas id="canvas" width="800" height="600"></canvas>
+
+
+    <div class="home">
+        <a href="index.html" style="color:rgb(255,255,255);">←Back to Home</a>
+    </div>
+</body>
+<script src="js/breakout.js"></script>
+</html>
